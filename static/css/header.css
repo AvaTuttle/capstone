@@ -1,47 +1,21 @@
 .site-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 40px;
-    background-color: rgb(33, 8, 8); 
-    border-bottom: 4px solid #921e58; 
 }
 
 .logo h1 {
-    font-size: 32px;
-    color: rgba(255, 105, 180, 0.8); 
-    text-shadow: 0 0 12px rgba(255, 105, 180, 0.5); 
-    letter-spacing: 2px;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+  
+}
+
+.nav {
+
 }
 
 .nav a {
-    color: #dcb2ff; 
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
-    transition: color 0.3s ease;
+
 }
 
 .nav a:hover {
-    color: #ff69b4; 
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
-}
 
-/* Responsive mobile-friendly nav */
-@media (max-width: 600px) {
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav a {
-        display: block;
-        margin: 5px 0;
-    }
 }
