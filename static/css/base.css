@@ -1,0 +1,9 @@
+/* Warm background with neon accents */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(67, 40, 24); /* Deep warm brown */
+    color: #fff;
+}
+
+
