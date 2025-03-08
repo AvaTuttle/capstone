@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-<link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
     <title>Document</title>
 </head>
 <body>
     <header class="site-header">
         <div class="logo">
-            <h1>Side-A Records</h1>
+            <a href="{% url 'first_view' %}">Side-A Records</a>
         </div>
         <nav class="nav">
             <a href="#">All</a>
@@ -21,11 +23,22 @@
             <a href="#">Best Sellers</a>
             <a href="#">Pre-Owned</a>
             <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="{% url 'about' %}">About</a>
         </nav>
     </header>
 
-    <h1>Hello World!</h1>
+    <div>
+        <h1>insert banner here?</h1>
+    </div>
+
+    {% block content %}
     
+    {% endblock content %}
+
+    <footer class="site-footer">
+        <div class="site-logo">
+            <h2>Side-A Records</h2>
+        </div>
+    </footer>
 </body>
 </html>

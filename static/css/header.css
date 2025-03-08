@@ -1,21 +1,45 @@
 .site-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(10, 10, 10, 0.9); 
+    border-bottom: 2px solid #ff5e99; 
+    backdrop-filter: blur(10px); 
+    border-radius: 0 0 15px 15px; 
+}
+
+.site-header .logo a{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #ff5e99; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(255, 94, 153, 0.5);
+    font-family: 'Poppins', sans-serif;
     align-items: center;
 }
 
-.logo h1 {
-  
+.site-header .nav {
+    display: flex;
+    gap: 15px;
 }
 
-.nav {
-
+.site-header .nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border-radius: 15px; 
+    transition: all 0.3s ease;
 }
 
-.nav a {
-
-}
-
-.nav a:hover {
-
+.site-header .nav a:hover {
+    background: rgba(255, 94, 153, 0.15); 
+    color: #ff5e99;
+    text-shadow: 0 0 8px rgba(255, 94, 153, 0.5);
 }

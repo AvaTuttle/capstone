@@ -1,15 +1,29 @@
 body {
-
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(10, 10, 10, 0.9);
+    color: #f0f0f0;  
 }
 
 h1, h2, h3 {
-
+    margin: 0 0 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ff69b4;  
 }
 
 a {
-
+    color: #ff69b4; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #ff85c0;  
+    text-shadow: 0 0 6px rgba(255, 133, 192, 0.5);
 
 }
