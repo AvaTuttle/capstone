@@ -43,3 +43,42 @@
     color: #ff5e99;
     text-shadow: 0 0 8px rgba(255, 94, 153, 0.5);
 }
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 3%;
+    }
+    
+    .site-header .nav {
+        display: flex;
+        flex-wrap: wrap; /* Allows two rows */
+        justify-content: center;
+        gap: 0.8rem;
+        max-width: 300px; /* Controls nav width */
+    }
+
+    .site-header .nav a {
+        flex: 1 1 calc(50% - 1rem); /* Two items per row */
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header .logo a {
+        font-size: 1.5rem;
+    }
+    
+    .site-header .nav {
+        max-width: 250px; /* Keeps nav links contained */
+        gap: 0.5rem;
+    }
+
+    .site-header .nav a {
+        font-size: 0.85rem;
+        padding: 5px 8px;
+    }
+}
