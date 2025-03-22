@@ -1,0 +1,9 @@
+.banner-container{
+    text-align: center;
+    max-height: 200px;
+    max-width: 100%;
+    background-color: #1a1a1a;
+}
+.banner-container h3{
+    align-items: center;
+}

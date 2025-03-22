@@ -1,0 +1,102 @@
+.album-listings {
+    padding: 20px;
+    background-color: rgba(6, 15, 32, 0.651);
+    border-radius: 10px;
+}
+
+.album-listings .album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+.album-listings .album-grid .album-card {
+    background-color: rgba(6, 15, 32, 0.651);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album-card .album-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.album-card .album-info p {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.album-card .album-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.album-card .album-info h4 {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.album-card .album-info .album-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.album-info button {
+    background-color: #1a1a1a;
+    color: #ff69b4;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.album-info button:hover {
+    background-color: #333;
+}
+
+.album-info .title {
+    padding-top: 10px;
+}
+
+.album-info h3,
+.album-info h4 {
+    font-size: 1rem; /* Default size */
+    line-height: 1.2; /* Keeps spacing clean */
+    max-height: 2.4em; /* Limits to ~2 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Show 2 lines max */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+

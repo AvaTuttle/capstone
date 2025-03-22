@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/listings.css' %}">
+    <link rel="stylesheet" href="{% static 'css/banner.css' %}">
+    <title>Capstone</title>
 </head>
 <body>
     <header class="site-header">
@@ -18,28 +19,34 @@
         </div>
         <div class=".nav-container">
             <nav class="nav">
-                <a href="#">All</a>
+                <a href="{% url 'album_list' %}">All</a>
                 <a href="#">New Releases</a>
                 <a href="#">Genres</a>
-                <a href="#">Best Sellers</a>
                 <a href="#">Pre-Owned</a>
-                <a href="#">Contact</a>
-                <a href="{% url 'about' %}">About</a>
             </nav>
         </div>
     </header>
 
-    <div>
-        <h1>insert banner here?</h1>
+    <div class="banner-container">
+        <h3>stuff goes here</h3>
     </div>
 
-    {% block content %}
-    
-    {% endblock content %}
+    <div class="main-content">
+        {% block content %}
+
+
+        {% endblock content %}
+    </div>
 
     <footer class="site-footer">
         <div class="site-logo">
             <h2>Side-A Records</h2>
+        </div>
+        <div>
+            <nav>
+                <a href="#">contact</a>
+                <a href="{% url 'about' %}">About</a>
+            </nav>
         </div>
     </footer>
 </body>

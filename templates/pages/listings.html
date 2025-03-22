@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<section class="album-listings">
+    <div class="album-grid">
+        {% for album in albums %}
+        <div class="album-card">
+            {% if album.image %}
+            <img src="{{album.image.url}}" alt="{{album.title}}">
+            {% endif %}
+            <div class="album-info">
+                <h3 class="artist">Artist - {{album.artist}}</h3>
+                <h4 class="title">Album - {{album.title}}</h4> 
+                <div class="album-actions">
+                    <p>${{album.price}}</p>
+                    <button>add</button>                    
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>No Albums Available</p>    
+    {% endfor %} 
+        <!-- Add more album cards dynamically -->
+    </div>
+</section>
+
+
+{% endblock content %}

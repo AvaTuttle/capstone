@@ -5,10 +5,12 @@
 
 <section class="about-section">
     <div class="about-content">
-        <h2>About Us!</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-           Sequi ab quod, dicta odio ducimus repellat delectus repudiandae temporibus,
-           earum, voluptates qui iure distinctio ut quaerat officiis esse unde quo hic.</p>
+        {% for section in about_sections %}
+            <h2>{{ section.title }}</h2>
+            <p>{{ section.content|linebreaks }}</p>  <!-- Keeps formatting -->
+        {% empty %}
+            <p>No about content available.</p>
+        {% endfor %}
     </div>
 </section>
 

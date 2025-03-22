@@ -1,13 +1,26 @@
-.site-footer{
-    background: 1a1a1a;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.site-footer .site-logo{
 
+.main-content {
+    flex: 1;
 }
 
-.site-footer .site-logo h2{
-    align-items: center;
+
+.site-footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    width: 100%;
+}
 
+
+.site-footer .site-logo h2 {
+    text-align: center;
+    margin: 0;
 }
