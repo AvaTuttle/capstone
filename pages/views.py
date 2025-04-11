@@ -16,7 +16,7 @@ def first_view(request):
 
 
 def index(request, artist=None):
-    print(f"********* {artist}")
+    print(f"********** {artist}")
     if artist != None:
         print(f" *** artist {artist} ****")
         albums = Album.objects.filter(artist=artist)
