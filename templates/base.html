@@ -20,17 +20,17 @@
         </div>
 
         <div class="filter">
-            <form method="get">
+            <form method="GET" action="{% url 'album_list' %}">
                 <label for="search">Search Records</label>
                 <input 
-                  type="search" 
+                  type="text" 
                   name="search" 
                   id="search"
                   value="{{ request.GET.search }}"
                   placeholder="Search by title..."
                 >
-                <button type="submit">Search</button>
-              </form>
+                <button type="submit" value="search">Search</button>
+            </form>
         </div>
 
         <div class=".nav-container">

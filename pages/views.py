@@ -14,8 +14,22 @@ def first_view(request):
 #def listings_view(request):
     return render(request,  "pages/listings.html")
 
+
+def index(request, artist=None):
+    print(f"********* {artist}")
+    if artist != None:
+        print(f" *** artist {artist} ****")
+        albums = Album.objects.filter(artist=artist)
+        return render(request, "pages/listing.html", {"albums": albums})
+    else:
+        print("**** ELSE *** ")
+        albums = Album.objects.filter(artist="Elvis")
+        print(f"albums {albums}")
+        return render(request, "pages/listings.html", {"albums": albums})
+
 def album_list(request):
-    albums = Album.objects.all()
+    albums = Album.objects.filter(artist="Elvis")
+    print(f"albums {albums}")
     return render(request, "pages/listings.html", {"albums": albums})
 
 def about_view(request):
